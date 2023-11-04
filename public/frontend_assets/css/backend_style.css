@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+li {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: auto;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*End of Common CSS*/
+
+
+/*header css start*/
+
+.header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all .3s linear;
+    background-color: #1D4354;
+}
+
+.header .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px 0px;
+    color: white;
+    transition: all .2s linear;
+}
+
+li.nav-item {
+    padding: 0px 10px;
+}
+
+.header .last_item {
+    border-radius: 2px;
+    background: transparent;
+    color: white;
+    border: 2px solid #37A000;
+    margin-top: -1px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.header .last_item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #37A000;
+    transition: all .3s linear;
+    z-index: -1;
+}
+
+.header .last_item:hover::before {
+    width: 100%;
+}
+
+.header .dropdown-menu {
+    background-color: #1D4354;
+    box-shadow: 5px 5px 15px #484848 !important;
+    border: none;
+    border-top: 1px solid white !important;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.header .dropdown-menu a.dropdown-item {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-top: 6px;
+    padding-bottom: 9px;
+}
+
+.header .dropdown-menu a.dropdown-item:hover {
+    color: #343a40;
+}
+
+.header .dropdown-menu a.dropdown-item:hover i {
+    color: #343a40;
+}
+
+.header .dropdown-menu a.dropdown-item i {
+    color: white;
+    margin-right: 5px;
+}
+
+
+/* alert secton css */
+
+.alert_section {
+    margin-top: 95px;
+}
+
+.alert_section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* backend naviagtion css */
+
+.backend_navigation {
+    padding-top: 20px;
+}
+
+.navigation_title h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.navigation_item ul li {
+    display: inline-block;
+}
+
+.navigation_item ul li a {
+    display: block;
+    color: #226679;
+    padding: 8px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navigation_item ul li button {
+    display: block;
+    background-color: #226679;
+    padding: 8px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+}
+
+.navigation_item ul li.active {
+    background-color: #226679;
+    border-radius: 5px;
+}
+
+.navigation_item ul li.active a {
+    color: white;
+}
+
+.navigation_item ul li.active button {
+    color: white;
+}
+
+
+/* single_assesment_content */
+
+.assesment_details {
+    background-color: #f7f1e3;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px 30px
+}
+
+
+/* view all qustion page css */
+
+.test {
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.test .test_heading h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: #1D4354;
+}
+
+.test .test_heading p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1D4354;
+    width: 60%;
+    margin: auto;
+}
+
+.test_content {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.test_content .card {
+    box-shadow: 10px 10px 15px rgb(187, 187, 187);
+    margin-bottom: 50px;
+}
+
+.test_content .card-header {
+    background-color: #376678;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.test_content .card-header h3 {
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.test_content .card-body {
+    padding-top: 30px;
+    background: rgba(203, 215, 203, 0.3);
+}
+
+.test_content .card-body h3 {
+    color: #1D4354;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    /* letter-spacing: 1px; */
+    margin-bottom: 15px;
+}
+
+.test_content .card-body p {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+.test_content .card-body a {
+    display: inline-block;
+    border: 2px solid #1D4354;
+    padding: 5px 18px;
+    border-radius: 6px;
+    color: #1D4354;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.6);
+    transition: all .2s linear;
+}
+
+.test_content .card-body a:hover {
+    box-shadow: 0px 0px 0px transparent;
+    background: #1D4354;
+    color: white;
+}
+
+.test_content .slick-dots {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.test_content .slick-dots li {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 0px 7px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid #1D4354;
+    transition: all .2s linear;
+}
+
+.test_content .slick-dots li.slick-active {
+    background-color: #1D4354;
+}
+
+.test_content .slick-dots li button {
+    display: none;
+}
+
+.test_heading {
+    padding-top: 40px;
+}
+
+.test_heading h1 {
+    width: 70%;
+    margin: auto;
+}
+
+.test_bank_input {
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.test_bank_input i {
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    font-size: 18px;
+    color: #376678;
+}
+
+a.test_load_more_btn {
+    display: inline-block;
+    border: 2px solid #376678;
+    border-radius: 6px;
+    padding: 8px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #376678;
+    box-shadow: 10px 10px 15px gray;
+    transition: all .2s linear;
+}
+
+a.test_load_more_btn:hover {
+    box-shadow: none;
+}
+
+
+/* view all question css end */
