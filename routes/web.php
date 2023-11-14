@@ -25,7 +25,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('ckeditor/upload', 'CkeditorController@upload')->name('ckeditor.upload');
 Route::post('filemanager/upload', 'CkeditorController@upload')->name('ckeditor.upload');
 
-Route::group(['middleware' => ['auth','verified']], function () {
+Route::group(['middleware' => ['auth', 'verified']], function () {
     //have to login and email verified
 
     Route::get('/add/question/page','QuestionBankController@addQuestionPage');
