@@ -27,16 +27,14 @@ class ProfileController extends Controller
         if ($request->hasFile('image')){
 
             if($user_info->image != null){
-                if(file_exists($user_info->image)){
-                    unlink($user_info->image);
-                    // unlink('public/'.$user_info->image);
+                if(file_exists(public_path($user_info->image))){
+                    unlink(public_path($user_info->image));
                 }
             }
 
             $get_image = $request->file('image');
             $image_name = str::random(5) . time() . '.' . $get_image->getClientOriginalExtension();
-            Image::make($get_image)->save('profile_images/' . $image_name, 50);
-            // Image::make($get_image)->save('public/profile_images/' . $image_name, 50);
+            Image::make($get_image)->save(public_path('profile_images/') . $image_name, 50);
             $profile_image = "profile_images/" . $image_name;
 
             User::where('id',Auth::user()->id)->update([
