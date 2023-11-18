@@ -120,7 +120,7 @@
                                     @endif
                                 @endif --}}
 
-                                : <b>{{ number_format($averageScore / count($evaluatorsEvaluations), 2) }}%</b>
+                                :<b>{{ count($evaluatorsEvaluations) > 0 ? number_format($averageScore / count($evaluatorsEvaluations), 2) : 0 }}%</b>
                             </td>
                         </tr>
                     </table>
